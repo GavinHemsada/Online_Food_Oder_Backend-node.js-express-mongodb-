@@ -38,8 +38,7 @@ This is a backend application for an online food ordering system built using Nod
    ```
    PORT=5000
    MONGO_URI=your_mongodb_connection_string
-   JWT_SECRET=your_secret_key
-   STRIPE_SECRET_KEY=your_stripe_key
+   APP_SECRET=your_secret_key
    ```
 
 4. Start the server:
