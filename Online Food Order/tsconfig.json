@@ -1,0 +1,20 @@
+{
+  "compilerOptions": {
+    "target": "ES2022", // Updated to a modern target compatible with Node.js >=20.0.0
+    "module": "commonjs", // Retain commonjs for compatibility with ts-node and nodemon
+    "lib": ["ES2022"], // Updated to match target, removed DOM and ESNext.AsyncIterable unless needed
+    "sourceMap": true, // Keep for debugging
+    "outDir": "./dist", // Keep output directory
+    "rootDir": "./src", // Keep source directory
+    "strict": true, // Enable strict mode for better type safety (optional, adjust as needed)
+    "noImplicitAny": true, // Enable to avoid implicit any (optional, adjust as needed)
+    "moduleResolution": "node", // Keep for Node.js
+    "esModuleInterop": true, // Keep for compatibility with default imports
+    "experimentalDecorators": true, // Required for class-validator/class-transformer
+    "emitDecoratorMetadata": true, // Required for decorator metadata
+    "strictPropertyInitialization": false, // Keep false for DTOs with decorators
+    "skipLibCheck": true // Keep to skip type checking of declaration files
+  },
+  "include": ["src/**/*.ts"],
+  "exclude": ["node_modules", "dist"]
+}
